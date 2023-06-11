@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Project</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="mb-6">
+    <!-- navigation bar -->
+    <header class="bg-white">
+        <nav class="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="w-auto h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="open-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+
+
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Courses</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Members</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="py-2 text-sm font-semibold leading-6 text-indigo-600">Sign In</a>
+                <a href="#"
+                    class="px-6 py-2 ml-4 text-sm font-semibold leading-6 text-white bg-indigo-600 rounded-lg">Register</a>
+            </div>
+        </nav>
+        <div class="hidden" id="mobile-menu" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="w-auto h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                            alt="">
+                    </a>
+                    <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 z-10">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flow-root mt-6">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="py-6 space-y-2">
+                            <a href="#"
+                                class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Home</a>
+                            <a href="#"
+                                class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Courses</a>
+                            <a href="#"
+                                class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Members</a>
+                            <a href="#"
+                                class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">About</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-indigo-600 hover:bg-gray-50">Sign
+                                In</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50 hover:text-indigo-600 bg-indigo-600 text-white">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="flex flex-col mx-auto max-w-7xl lg:flex-row">
+        <!-- Left side column -->
+        <div class="self-center p-10 lg:w-1/2 text-gray-950">
+            <h1 class="mb-4 text-4xl font-extrabold capitalize">Getting <span class="text-indigo-600">quality</span>
+                education now is more <span class="text-indigo-600">easy</span></h1>
+            <p class="mb-6 text-lg text-gray-500">Provide you with the latest online learning system and meterial that
+                help your knowledge growing.</p>
+            <div class="flex flex-col gap-2 sm:flex-row">
+                <button class="px-6 py-3 font-bold text-white bg-indigo-600 rounded-lg">Getting Started</button>
+                <button class="px-6 py-3 font-bold text-indigo-600 bg-indigo-100 rounded-lg">Get Free Trial</button>
+            </div>
+        </div>
+
+        <!-- Right side column -->
+        <div class="lg:w-1/2">
+            <img src="./images/girl-holding-book.png" alt="Girl holding book" class="w-4/5 h-auto mx-auto" />
+        </div>
+    </section>
+
+    <!-- stats section -->
+    <section class="flex flex-col justify-between mx-auto mt-20 bg-blue-100 rounded-lg md:flex-row max-w-7xl">
+        <div class="flex items-center justify-center p-8">
+            <div class="flex items-center">
+                <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
+                    <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-extrabold text-indigo-600">10k+</h3>
+                    <span class="text-gray-600 uppercase">TOTAL COURSES</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center p-8">
+            <div class="flex items-center">
+                <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
+                    <svg class="w-1/2 h-1/2 stroke-orange-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-extrabold text-indigo-600">500+</h3>
+                    <span class="text-gray-600 uppercase">Expert Mentors</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center p-8">
+            <div class="flex items-center">
+                <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
+                    <svg class="w-1/2 h-1/2 stroke-pink-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z">
+                        </path>
+                    </svg>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-extrabold text-indigo-600">300k+</h3>
+                    <span class="text-gray-600 uppercase">students globaly</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- category section -->
+    <section class="px-4 mx-auto mt-20 max-w-7xl">
+        <!-- category header section -->
+        <div class="flex justify-between">
+            <div>
+                <h2 class="text-2xl font-bold">Explore courses by category</h2>
+                <span class="text-gray-600">Browser top class courses by browsing our category which will be more easy
+                    for you.</span>
+            </div>
+            <div class="self-end">
+                <button class="px-2 py-1 font-medium text-indigo-600 bg-white border rounded">All Category</button>
+            </div>
+        </div>
+
+        <!-- category grid -->
+
+        <div class="flex flex-wrap">
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex group-hover:bg-blue-600 transition ease-linear bg-blue-50 rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg class="w-1/2 transition ease-linear h-1/2 stroke-blue-600 group-hover:stroke-white"
+                            fill="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="text-base font-extrabold">Design & <br> Development</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex group-hover:bg-purple-600 bg-purple-50 transition ease-linear rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-1/2 transition ease-linear group-hover:stroke-white h-1/2 stroke-purple-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                        </svg>
+
+                    </div>
+                    <div>
+                        <h3 class="text-base font-extrabold">Marketing & <br> Communication</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex bg-orange-50 group-hover:bg-orange-600 transition ease-linear rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-1/2 transition ease-linear group-hover:stroke-white stroke-orange-600 h-1/2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-extrabold">Digital & <br> Marketing</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex bg-red-50 transition ease-linear group-hover:bg-red-600 rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-1/2 transition ease-linear group-hover:stroke-white stroke-red-600 h-1/2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                        </svg>
+
+
+                    </div>
+                    <div>
+                        <h3 class="text-base font-extrabold">Business & <br> Consulting</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex bg-pink-50 transition ease-linear group-hover:bg-pink-600 rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-1/2 transition ease-linear group-hover:stroke-white stroke-pink-600 h-1/2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+
+                    </div>
+                    <div>
+                        <h3 class="text-base font-extrabold">Finance <br> Management</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 lg:w-1/3">
+                <div
+                    class="flex items-center justify-center p-4 transition-shadow ease-linear rounded-lg group hover:shadow-2xl">
+                    <div
+                        class="flex bg-green-50 transition ease-linear group-hover:bg-green-600 rounded-lg items-center justify-center mr-6 w-[100px] h-[100px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-1/2 transition ease-linear group-hover:stroke-white stroke-green-600 h-1/2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                        </svg>
+
+                    </div>
+                    <div>
+                        <h3 class="text-base font-extrabold">Self & <br> Improvement</h3>
+                        <span class="text-xs text-gray-600 uppercase">250+ courses available</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
