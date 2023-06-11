@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    /* border: 1px solid red; */
+footer ul a:hover {
+    text-decoration: underline;
 }
