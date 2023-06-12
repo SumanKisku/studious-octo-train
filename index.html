@@ -109,8 +109,8 @@
     </section>
 
     <!-- stats section -->
-    <section class="flex flex-col justify-between mx-auto mt-20 bg-blue-100 rounded-lg md:flex-row max-w-7xl">
-        <div class="flex items-center justify-center p-8">
+    <section class="flex flex-col justify-between mx-auto mt-20 bg-blue-100 md:rounded-lg md:flex-row max-w-7xl">
+        <div class="flex items-center p-8">
             <div class="flex items-center">
                 <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
                     <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center p-8">
+        <div class="flex items-center p-8">
             <div class="flex items-center">
                 <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
                     <svg class="w-1/2 h-1/2 stroke-orange-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center p-8">
+        <div class="flex items-center p-8">
             <div class="flex items-center">
                 <div class="flex items-center justify-center w-20 h-20 mr-6 bg-white">
                     <svg class="w-1/2 h-1/2 stroke-pink-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
@@ -167,7 +167,7 @@
         <!-- category header section -->
         <div class="flex justify-between">
             <div>
-                <h2 class="text-2xl font-bold">Explore courses by category</h2>
+                <h2 class="text-3xl font-bold">Explore courses by category</h2>
                 <span class="text-gray-600">Browser top class courses by browsing our category which will be more easy
                     for you.</span>
             </div>
@@ -304,7 +304,7 @@
             <!-- popular courses header section -->
             <div class="flex justify-between">
                 <div>
-                    <h2 class="text-2xl font-bold">Popular courses for you</h2>
+                    <h2 class="text-3xl font-bold">Popular courses for you</h2>
                     <span class="text-gray-600">Get the best course with the best price with world-class tutors</span>
                 </div>
                 <div class="self-end">
@@ -570,9 +570,9 @@
     <!-- testimonials section -->
     <section class="px-4 py-10 mx-auto max-w-7xl">
         <!-- testimonial header -->
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap items-center">
             <div class="w-full md:w-1/3">
-                <h2 class="text-2xl font-bold">What our students are <br> saying about us</h2>
+                <h2 class="text-3xl font-bold">What our students are <br> saying about us</h2>
             </div>
             <div class="w-full md:w-2/3">
                 <p class="text-gray-600">
@@ -582,30 +582,47 @@
             </div>
         </div>
 
-        <!-- TODO: Change testimonial images, and add stars -->
         <!-- testimonial actual content section -->
         <div class="mt-5 embla">
             <div class="gap-5 embla__container translate-x-1/4">
                 <div class="embla__slide">
                     <div class="w-full px-5 py-6 text-white bg-indigo-600 rounded-lg">
                         <h3 class="font-semibold">Great platform</h3>
-                        <p class="pb-6 border-b">
+                        <p class="pb-6 border-b ">
                             Circuit has helped me expand my knowledge through several important courses that are extreme
                             impactful and helpful for my career. For the first time, finishing my degree seemed
                             realistic.
                         </p>
                         <div class="flex items-center mt-3">
                             <div class="flex items-center justify-center w-10 h-10 mr-6 bg-white rounded-full">
-                                <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
-                                    </path>
-                                </svg>
+                                <img class="w-full h-auto rounded-full" src="https://i.pravatar.cc/400" alt="">
                             </div>
                             <div>
                                 <h3 class="text-xl font-extrabold">Joe Root</h3>
-                                <span class="uppercase">TOTAL COURSES</span>
+                                <!-- stars -->
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -620,16 +637,34 @@
                         </p>
                         <div class="flex items-center mt-3">
                             <div class="flex items-center justify-center w-10 h-10 mr-6 bg-white rounded-full">
-                                <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
-                                    </path>
-                                </svg>
+                                <img class="w-full h-auto rounded-full" src="https://i.pravatar.cc/400
+                                " alt="">
                             </div>
                             <div>
                                 <h3 class="text-xl font-extrabold">Joe Root</h3>
-                                <span class="uppercase">TOTAL COURSES</span>
+                                <!-- stars -->
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -644,16 +679,34 @@
                         </p>
                         <div class="flex items-center mt-3">
                             <div class="flex items-center justify-center w-10 h-10 mr-6 bg-white rounded-full">
-                                <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
-                                    </path>
-                                </svg>
+                                <img class="w-full h-auto rounded-full" src="https://i.pravatar.cc/400
+                                " alt="">
                             </div>
                             <div>
                                 <h3 class="text-xl font-extrabold">Joe Root</h3>
-                                <span class="uppercase">TOTAL COURSES</span>
+                                <!-- stars -->
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -668,21 +721,39 @@
                         </p>
                         <div class="flex items-center mt-3">
                             <div class="flex items-center justify-center w-10 h-10 mr-6 bg-white rounded-full">
-                                <svg class="w-1/2 h-1/2 stroke-blue-400" fill="none" stroke-width="1.5" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25">
-                                    </path>
-                                </svg>
+                                <img class="w-full h-auto rounded-full" src="https://i.pravatar.cc/400
+                                " alt="">
                             </div>
                             <div>
                                 <h3 class="text-xl font-extrabold">Joe Root</h3>
-                                <span class="uppercase">TOTAL COURSES</span>
+                                <!-- stars -->
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 mr-1 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10 1l2.928 6.688L20 7.25l-5 4.875 1.464 7.562L10 15.125 3.536 19.687l1.464-7.563-5-4.875 7.072-.563L10 1z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
