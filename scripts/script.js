@@ -17,3 +17,9 @@ closeButton.addEventListener('click', () => {
     menuContainer.classList.toggle('hidden');
     console.log("clicked")
 });
+
+// tesimonial animation - embla carousel
+
+var emblaNode = document.querySelector('.embla');
+var options = {loop: false };
+var embla = EmblaCarousel(emblaNode, options);
