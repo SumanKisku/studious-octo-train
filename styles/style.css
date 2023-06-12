@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 footer ul a:hover {
-    text-decoration: underline;
+    color: black;
+    transition: color 0.2s linear;
 }
